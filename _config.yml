@@ -23,7 +23,7 @@ repository               : "crobbinsphd/crobbinsphd.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Robbins - Headshot-1.jpg"
+  avatar           : "github_headshot.jpg"
   name             : "Caroline Robbins"
   pronouns         : # example: "she/her"  
   bio              : "PhD. Student of Political Science | International Relations & Comparative Politics"
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : caroline-robbins-137art
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
