@@ -22,9 +22,4 @@ main:
 
   - title: "Talks"
     url: /talks/    
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+  
