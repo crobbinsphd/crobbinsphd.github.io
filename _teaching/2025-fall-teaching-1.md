@@ -1,6 +1,7 @@
 ---
 title: "Political Violence"
 collection: teaching
+category: ta
 type: "Teaching Assistant"
 permalink: /teaching/2025-fall-teaching-1
 venue: "Florida State University, Political Science"
