@@ -12,4 +12,4 @@ Lead TA for INR2002 - Introduction to International Affairs.
 
 Fostered discussion among students, supervised grading.
 
-Instructor of Record: Dr. Sean Ehrlich (Fall 2024 - Spring 2025) and Dr. Dotan Haim (Fall 2025)
+Instructor of Record: Dr. Sean Ehrlich (Fall 2024 - Spring 2025) (sehrlich@fsu.edu) and Dr. Dotan Haim (Fall 2025) (dhaim@fsu.edu)
