@@ -8,8 +8,10 @@ date: 2024-01-01
 location: "Tallahassee, FL, USA"
 ---
 
-TA for the Research-Intensive Bachelor's Certificate course on political science research methods.
+TA for POS3930 - Advanced Seminar on Political Science Research Methods, a specialized undergraduate course for Research-Intensive Bachelor's Certificate students.
 
-Primary focus on survey experiment design, survey development, academic draft writing, and data presentation.
+The course focuses on survey experiment design, survey development, academic draft writing, and data presentation for aspiring researchers.
+
+My primary role was to evaulate student research designs and aid in instruction on survey development and launch.
 
 Instructor of Record: Carlisle Rainey (crainey@fsu.edu)
