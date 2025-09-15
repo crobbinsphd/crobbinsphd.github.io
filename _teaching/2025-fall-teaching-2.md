@@ -1,6 +1,7 @@
 ---
 title: "Political Science Research Methods"
 collection: teaching
+category: ta
 type: "Teaching Assistant"
 permalink: /teaching/2024-fall-teaching-2
 venue: "Florida State University, Political Science"
