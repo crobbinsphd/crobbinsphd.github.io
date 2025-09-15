@@ -1,6 +1,7 @@
 ---
 title: "Advanced Seminar on Political Science Research Methods"
 collection: teaching
+category: ta
 type: "Teaching Assistant"
 permalink: /teaching/2024-spring-teaching-1
 venue: "Florida State University, Political Science"
