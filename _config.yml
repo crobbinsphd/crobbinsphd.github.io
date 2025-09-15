@@ -87,6 +87,21 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  drafts:
+    title: "Working Papers"
+
+    # Teaching Category - The following the list of teaching categories and their headings
+teaching_category:
+  ta:
+    title: 'Teaching Assistant'
+  instructor:
+    title: 'Instructor of Record'    
+    # Presentation Category - The following the list of presentation categories and their headings
+presentation_category:
+  posters:
+    title: 'Posters'
+  slides:
+    title: 'Slide Presentations'    
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
