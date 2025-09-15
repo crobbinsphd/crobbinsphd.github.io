@@ -1,6 +1,7 @@
 ---
 title: "Introduction to International Affairs"
 collection: teaching
+category: ta
 type: "Teaching Assistant"
 permalink: /teaching/2024-fall-teaching
 venue: "Florida State University, Political Science"
