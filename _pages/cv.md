@@ -9,10 +9,10 @@ redirect_from:
 
 You can view my CV below or download it as a PDF.
 
-[Download CV (PDF)](/files/Robbins_CV (2).pdf)
+[Download CV (PDF)](/files/Robbins_CV.pdf)
 
 <iframe
-  src="/files/Robbins_CV (2).pdf"
+  src="/files/Robbins_CV.pdf"
   width="100%"
   height="900px"
   style="border: none;">
