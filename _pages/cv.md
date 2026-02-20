@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-You can view my CV below or download it as a PDF.
+You can view my CV below or download it as a PDF. It is regularly updated with my most recent academic activity.
 
 [Download CV (PDF)](/files/Robbins_CV.pdf)
 
