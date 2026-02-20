@@ -23,7 +23,7 @@ repository               : "crobbinsphd/crobbinsphd.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "github_headshot.jpg"
   name             : "Caroline Robbins"
   pronouns         : "she/her"  
   bio              : "I am a Ph.D. student of Political Science at Florida State University, subfields International Relations and Comparative Politics "
