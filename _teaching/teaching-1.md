@@ -1,5 +1,5 @@
 ---
-title: "INR2002"
+title: "INR2002: Introduction to International Affairs"
 collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/teaching-1
