@@ -54,20 +54,3 @@
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
-/* Mint hover background for top navigation */
-.masthead__menu-item a {
-  padding: 0.5em 0.75em;
-  border-radius: 6px;
-  transition: background-color: #aef5e6;  /* softer */;
-}
-
-.masthead__menu-item a:hover,
-.masthead__menu-item a:focus {
-  background-color: #5fffe0;
-  color: #0f2a26; /* readable on mint */
-}
-
-.masthead__menu-item.is-active a {
-  background-color: rgba(95, 255, 224, 0.25);
-  border-radius: 6px;
-}
