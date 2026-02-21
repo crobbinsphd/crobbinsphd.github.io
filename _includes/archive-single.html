@@ -52,14 +52,19 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
- {% if post.collection == 'posters' and post.paperurl %}
+{% if post.collection == 'posters' and post.paperurl %}
+  <div style="max-width: 800px; margin: 1em 0;">
+    <img
+      src="{{ post.paperurl }}"
+      alt="Poster: {{ post.title }}"
+      style="width: 100%; height: auto; border: 1px solid #ddd;">
+  </div>
   <p>
     <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
-      View full poster
+      Open full-size poster
     </a>
   </p>
-
-{% else %}
+{% endif %}
 
   {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
     <p>Recommended citation: {{ post.citation }}<br />
