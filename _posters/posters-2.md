@@ -1,9 +1,9 @@
 ---
 title: "Something is Rotten in the Alliance: Democratic Backsliding Reduces Public Support for Aiding Allies"
 collection: posters
-date: 2025-01-01
+date: 2025-11-18
 venue: "Global Public Opinion Lab Workshop (2025)"
-paperurl: "/files/gpol2025.pdf"
+paperurl: "/files/gpol2025.jpg"
 
 header:
   teaser: gpol2025.jpg
