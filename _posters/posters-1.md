@@ -2,7 +2,7 @@
 title: "Sage Advice? The Effect of Relative Adviser Experience on Hawkish Foreign Policy Decisionmaking"
 collection: posters
 excerpt: "Poster presented at the FSU Department Poster Session (2025)."
-date: 2025-05-01
+date: 2025-05-04
 venue: "Florida State University"
 paperurl: "/files/fyp2025.jpg"
 ---
