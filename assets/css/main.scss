@@ -54,16 +54,17 @@
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
+/* Mint-colored navigation (override theme) */
 .masthead__menu-item a {
-  color: #5fffe0 !important; /* mint */
-}
-
-.site-title,
-.site-title a {
   color: #5fffe0 !important;
 }
 
 .site-title,
 .site-title a {
   color: #5fffe0 !important;
+}
+
+.masthead__menu-item a:hover,
+.site-title a:hover {
+  color: #8dfff0 !important;
 }
