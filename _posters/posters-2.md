@@ -13,3 +13,10 @@ excerpt: >
   for maintaining and supporting alliance partners—namely how backsliding
   reduces perceived reliability and compatibility.
 ---
+
+<iframe
+  src="/images/gpol2025.jpg"
+  width="100%"
+  height="900px"
+  style="border: none;">
+</iframe>
