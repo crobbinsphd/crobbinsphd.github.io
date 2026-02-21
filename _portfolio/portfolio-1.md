@@ -1,7 +1,10 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Sage Advice? The Effect of Relative Adviser Experience on Hawkish Foreign Policy Decisionmaking"
 collection: portfolio
+excerpt: "Poster presented at the FSU Department Poster Session (2025)."
+date: 2025-05-01
+venue: "Florida State University"
+paperurl: "/files/First-Year Paper Poster - Robbins - 2025.jpg"
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This is part of a working paper extending the findings of Jost et al. (2024), looking at whether the effect of adviser contributions in foreign policy meetings was conditional on their experience relative to the president.
