@@ -1,10 +1,10 @@
 ---
 title: "Sage Advice? The Effect of Relative Adviser Experience on Hawkish Foreign Policy Decisionmaking"
 collection: posters
-excerpt: "<img src='/files/fyp2025.jpg' style='width:300px; height:auto;'><br/>Poster presented at the FSU Department Poster Session (2025)."
 date: 2025-05-04
-venue: "Florida State University"
-paperurl: "/files/fyp2025.jpg"
+venue: "FSU Department Poster Session (2025)"
+poster_image: /files/fyp2025.jpg
+poster_pdf: /files/fyp2025.jpg
 ---
 
-This is part of a working paper extending the findings of Jost et al. (2024), looking at whether the effect of adviser contributions in foreign policy meetings was conditional on their experience relative to the president.
+This is part of a working paper extending the findings of Jost et al. (2024), examining whether the effect of adviser contributions in foreign policy meetings is conditional on their experience relative to the president.
