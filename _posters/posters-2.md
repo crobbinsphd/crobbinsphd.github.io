@@ -14,10 +14,10 @@ excerpt: >
   reduces perceived reliability and compatibility.
 ---
 
-<a href="/files/fyp2025.jpg" target="_blank" rel="noopener">
+<a href="/files/gpol2025.jpg" target="_blank" rel="noopener">
   <img
     src="/files/gpol2025.jp"
-    alt="Poster: Sage Advice?"
+    alt="Poster: Something Rotten"
     style="
       max-width: 700px;
       width: 100%;
