@@ -79,3 +79,14 @@
   border-bottom: 2px solid var(--global-text-color);
   /* No need to repeat pointer-events and cursor here */
 }
+.masthead__menu-item a {
+  color: #5eead4; /* mint */
+}
+
+.masthead__menu-item a:hover {
+  color: #2dd4bf; /* slightly darker mint on hover */
+}
+
+.masthead__title a {
+  color: #5eead4;
+}
