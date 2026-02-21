@@ -5,7 +5,16 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<h2>Teaching Assistant</h2>
+<ul>
+{% for course in site.data.teaching_assistant %}
+  <li>
+    <strong>{{ course.code }}</strong>: {{ course.course }} — {{ course.institution }} ({{ course.term }})
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Instructor of Record</h2>
 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
