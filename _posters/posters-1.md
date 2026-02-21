@@ -4,7 +4,7 @@ collection: posters
 excerpt: "Poster presented at the FSU Department Poster Session (2025)."
 date: 2025-05-01
 venue: "Florida State University"
-paperurl: "/files/First-Year Paper Poster - Robbins - 2025.jpg"
+paperurl: "/files/fyp2025.jpg"
 ---
 
 This is part of a working paper extending the findings of Jost et al. (2024), looking at whether the effect of adviser contributions in foreign policy meetings was conditional on their experience relative to the president.
