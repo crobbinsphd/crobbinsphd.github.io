@@ -14,14 +14,15 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Group publications by category -->
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign title_shown = false %}
+
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
+
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2>
 
@@ -34,29 +35,47 @@ author_profile: true
       {% endunless %}
 
       <div class="archive__item">
-  <h2 class="archive__item-title">
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </h2>
+        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
-  {% if post.status %}
-    <p><em>{{ post.status }}</em></p>
-  {% endif %}
+          <!-- Title always links to abstract page -->
+          <h3 class="archive__item-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
 
-  {% if post.excerpt %}
-    <p>{{ post.excerpt }}</p>
-  {% endif %}
+          <!-- Status / venue line -->
+          {% if post.category == 'publications' %}
+            <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+          {% elsif post.category == 'working_papers' %}
+            {% if post.status %}
+              <p><em>{{ post.status }}</em></p>
+            {% endif %}
+          {% elsif post.category == 'other_publications' %}
+            {% if post.venue %}
+              <p><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+            {% endif %}
+          {% endif %}
 
-  {% if post.paperurl %}
-    <p><a href="{{ post.paperurl }}">Download paper</a></p>
-  {% endif %}
-</div>
+          <!-- One-line excerpt -->
+          {% if post.excerpt %}
+            <p class="archive__item-excerpt">
+              {{ post.excerpt }}
+            </p>
+          {% endif %}
+
+          <!-- Download links -->
+          {% if post.paperurl %}
+            <p>
+              <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
+                Download paper
+              </a>
+            </p>
+          {% endif %}
+
+        </article>
+      </div>
+
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <p>No publications available.</p>
 {% endif %}
-
-
-
