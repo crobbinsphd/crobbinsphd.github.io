@@ -8,4 +8,6 @@ date: 2025-11-12
 location: "Tallahasee, FL, USA"
 ---
 
-Introduction on how to use logistic regression on ordered categorical dependent variables for advanced undergraduate political science students at Florida State University. Part of a workshop series hosted by Dr. Carlisle Rainey as a part of the Maximum Likelihood Estimation course in the methods sequence.
+Introduction on how to use logistic regression on ordered categorical dependent variables for advanced undergraduate political science students at Florida State University. Part of a workshop series hosted by Dr. Carlisle Rainey as a part of the Maximum Likelihood Estimation course in the methods sequence. Presented with colleague Sarah Holland.
+
+[Download Slide Deck](/files/orderedcategoricalworkshop.pdf)
