@@ -14,67 +14,18 @@ author_profile: true
 
 {% include base_path %}
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
+{% for category in site.publication_category %}
+  <h2>{{ category[1].title }}</h2>
 
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
+  {% if category[0] == "working_papers" %}
+    <p><em>Manuscripts under review or in preparation.</em></p>
+  {% endif %}
 
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2>
+  <hr />
 
-        {% if category[0] == "working_papers" %}
-          <p><em>Manuscripts under review or in preparation.</em></p>
-        {% endif %}
-
-        <hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-
-      <div class="archive__item">
-        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-
-          <a href="{{ post.permalink | default: post.url | relative_url }}">
-             {{ post.title }}
-          </a>
-
-          <!-- Status / venue line -->
-          {% if post.category == 'publications' %}
-            <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-          {% elsif post.category == 'working_papers' %}
-            {% if post.status %}
-              <p><em>{{ post.status }}</em></p>
-            {% endif %}
-          {% elsif post.category == 'other_publications' %}
-            {% if post.venue %}
-              <p><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-            {% endif %}
-          {% endif %}
-
-          <!-- One-line excerpt -->
-          {% if post.excerpt %}
-            <p class="archive__item-excerpt">
-              {{ post.excerpt }}
-            </p>
-          {% endif %}
-
-          <!-- Download links -->
-          {% if post.paperurl %}
-            <p>
-              <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
-                Download paper
-              </a>
-            </p>
-          {% endif %}
-
-        </article>
-      </div>
-
-    {% endfor %}
+  {% for post in site.publications reversed %}
+    {% if post.category == category[0] %}
+      {% include archive-single.html %}
+    {% endif %}
   {% endfor %}
-{% else %}
-  <p>No publications available.</p>
-{% endif %}
+{% endfor %}
