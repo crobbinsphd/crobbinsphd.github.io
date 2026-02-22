@@ -33,7 +33,23 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
 
-      {% include archive-single.html %}
+      <div class="archive__item">
+  <h2 class="archive__item-title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+
+  {% if post.status %}
+    <p><em>{{ post.status }}</em></p>
+  {% endif %}
+
+  {% if post.excerpt %}
+    <p>{{ post.excerpt }}</p>
+  {% endif %}
+
+  {% if post.paperurl %}
+    <p><a href="{{ post.paperurl }}">Download paper</a></p>
+  {% endif %}
+</div>
     {% endfor %}
   {% endfor %}
 {% else %}
