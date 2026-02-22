@@ -59,3 +59,12 @@ html[data-theme="dark"] {
     color: #{$text};
   }
 }
+
+.greedy-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.greedy-nav .visible-links {
+  margin-left: auto;
+}
