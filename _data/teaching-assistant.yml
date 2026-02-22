@@ -4,15 +4,15 @@ ta:
     institution: "Florida State University"
     term: "Fall 2024–Fall 2025"
 
-  - course: "Political Science Research Methods"
-    code: "POS3713"
-    institution: "Florida State University"
-    term: "Fall 2025–Spring 2026"
-
   - course: "Special Topics in IR: Political Violence"
     code: "INR3933"
     institution: "Florida State University"
     term: "Fall 2025"
+
+  - course: "Political Science Research Methods"
+    code: "POS3713"
+    institution: "Florida State University"
+    term: "Fall 2025–Spring 2026"
 
   - course: "Advanced Seminar on Political Science Research Methods"
     code: "POS3930"
