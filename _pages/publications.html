@@ -37,10 +37,9 @@ author_profile: true
       <div class="archive__item">
         <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
-          <!-- Title always links to abstract page -->
-          <h3 class="archive__item-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
+          <a href="{{ post.permalink | default: post.url | relative_url }}">
+             {{ post.title }}
+          </a>
 
           <!-- Status / venue line -->
           {% if post.category == 'publications' %}
