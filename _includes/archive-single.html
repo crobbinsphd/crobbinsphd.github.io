@@ -23,78 +23,56 @@
       </div>
     {% endif %}
 
-   <h2 class="archive__item-title">
-     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-   </h2>
+    <!-- Title always links to internal abstract page -->
+    <h2 class="archive__item-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
 
-    {% if post.paperurl %}
-  <p>
-    <a href="{{ post.paperurl }}">Download paper</a>
-  </p>
-  {% endif %}
-
-    {% if post.read_time %}
-      <p class="page__meta">
-        <i class="fa fa-clock" aria-hidden="true"></i>
-        {% include read-time.html %}
-      </p>
+    <!-- Status / venue line -->
+    {% if post.collection == 'publications' %}
+      {% if post.category == 'publications' %}
+        <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+      {% elsif post.category == 'working_papers' %}
+        {% if post.status %}
+          <p><em>{{ post.status }}</em></p>
+        {% endif %}
+      {% elsif post.category == 'other_publications' %}
+        {% if post.venue %}
+          <p><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+        {% endif %}
+      {% endif %}
     {% endif %}
 
-    {% if post.collection == 'teaching' %}
-      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-    {% elsif post.collection == 'publications' %}
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-    {% elsif post.collection == 'posters' %}
-      <p><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-    {% elsif post.date %}
-      <p class="page__date">
-        <strong>
-          <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
-          {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
-        </strong>
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%B %d, %Y" }}
-        </time>
-      </p>
-    {% endif %}
-
+    <!-- One-line excerpt -->
     {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description">
         {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
       </p>
     {% endif %}
 
-    {% if post.collection == 'posters' and post.paperurl %}
-      <div style="max-width: 900px; margin: 1.5em 0;">
-        <img
-          src="{{ post.paperurl }}"
-          alt="Poster: {{ post.title }}"
-          style="width: 100%; height: auto; border: 1px solid #ddd;">
-      </div>
+    <!-- Download links -->
+    {% if post.paperurl %}
       <p>
         <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
-          Open full-size poster
+          Download paper
         </a>
       </p>
+    {% endif %}
 
-    {% else %}
+    {% if post.slidesurl %}
+      <p>
+        <a href="{{ post.slidesurl }}" target="_blank" rel="noopener">
+          Download slides
+        </a>
+      </p>
+    {% endif %}
 
-      {% if post.citation %}
-        <p>Recommended citation: {{ post.citation }}</p>
-      {% endif %}
-
-      {% if post.paperurl %}
-        <p><a href="{{ post.paperurl }}">Download Paper</a></p>
-      {% endif %}
-
-      {% if post.slidesurl %}
-        <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
-      {% endif %}
-
-      {% if post.bibtexurl %}
-        <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-      {% endif %}
-
+    {% if post.bibtexurl %}
+      <p>
+        <a href="{{ post.bibtexurl }}" target="_blank" rel="noopener">
+          Download BibTeX
+        </a>
+      </p>
     {% endif %}
 
   </article>
